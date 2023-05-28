@@ -1,1 +1,288 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --color-principal: #00ffc5;
+    --color-fondo-principal: #000910;
+    --color-fondo-secundario: #002130;
+    --color-letras: #ffffff;
+    --color-ventanas: #055970;
+    --color-cafe:#3f3f43;
+ }
+ *{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+ }
+ html, body { height: 100%; }
+ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ body ::-webkit-scrollbar {
+    display: none;
+  }
+ .container-fullscreen{
+   position: relative;
+   background-color: gray;
+   width: 100%;
+   height: 100vh;
+ }
+ .color-white{
+   color: var(--color-letras);
+ }
+ .background-black-primary{
+    /* background-color: #000910; */
+    background-color: var(--color-fondo-principal);
+ }
+ .background-green-primary{
+    background-color: var(--color-principal);
+ }
+ .green-primary{
+    color: var(--color-principal);
+ }
+ .background-navy-primary{
+    background-color: var(--color-fondo-secundario);
+ }
+ .navy-primary{
+    color: var(--color-fondo);
+ }
+ .background-light-blue-primary{
+    background-color: var(--color-ventanas);
+ }
+ .light-blue-primary{
+    color: var(--color-ventanas);
+ }
+ .background-light-lead-primary{
+    background-color: var(--color-cafe);
+ }
+ .light-lead-primary{
+    color: var(--color-cafe);
+ }
+ .white-color{
+    color:white;
+ }
+ .mat-card .mat-calendar .mat-calendar-content .ng-star-inserted .mat-calendar-table .mat-calendar-table-header,
+ .mat-calendar-body-label{
+    color: var(--color-principal);
+ }
+ .mat-calendar-body-cell-content,
+ .mat-date-range-input-separator{
+    color: white;
+ 
+ }
+ .mat-calendar-body-selected{
+    background-color:var(--color-principal);
+    color: black;
+ }
+ .mat-dialog-container{
+    background-color:var(--color-ventanas)
+ }
+ .mat-form-field-underline{
+    width: 0px !important;
+ }
+ /*
+ inputs
+ */
+ .input-global{
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    height: 40px;
+ }
+ /*Sobreescritura componetes angular material User components */
+ 
+ .filter .mat-select-placeholder,
+ .filter .mat-select-min-line{
+    color: var(--color-principal);
+ }
+ 
+ .filter .mat-select-panel .mat-optgroup-label, .mat-select-panel .mat-option:hover{
+    background-color:var(--color-fondo-secundario);
+    color: var(--color-principal);
+ 
+ }
+ .mat-option.mat-active{
+    background:var(--color-fondo-secundario);
+    color: white
+ 
+ 
+ }
+ /*
+ Sobreescritura tablas
+ */
+ .mat-elevation-z8 table,
+ .mat-elevation-z8 .mat-paginator{
+    background-color: var(--color-fondo-secundario);
+    color: white;
+ }
+ 
+ .mat-elevation-z8 .mat-sort-header-container{
+    color: var(--color-principal);
+ }
+ 
+ .mat-elevation-z8 th,
+ .mat-elevation-z8 td{
+    border-color: white ;
+    color: white
+ 
+ }
+ .mat-elevation-z8 .mat-select-arrow,
+ .mat-elevation-z8 .mat-select-value{
+    color: white
+ 
+ }
+ .mat-button.mat-primary.mat-button-disabled,
+ .mat-button.mat-accent.mat-button-disabled,
+ .mat-button.mat-warn.mat-button-disabled,
+ .mat-button.mat-button-disabled.mat-button-disabled,
+ .mat-icon-button.mat-primary.mat-button-disabled,
+ .mat-icon-button.mat-accent.mat-button-disabled,
+ .mat-icon-button.mat-warn.mat-button-disabled, .mat-icon-button.mat-button-disabled.mat-button-disabled, .mat-stroked-button.mat-primary.mat-button-disabled, .mat-stroked-button.mat-accent.mat-button-disabled, .mat-stroked-button.mat-warn.mat-button-disabled, .mat-stroked-button.mat-button-disabled.mat-button-disabled{
+    color:white;
+ }
+ .mat-drawer-backdrop.mat-drawer-shown {
+    background-color: transparent
+ }
+ .mat-snack-bar-container{
+    background-color: var(--color-ventanas);
+    color: var(--color-principal);
+ }
+ 
+ 
+ /* Colores de los time-picker */
+ .btn-outline-primary {
+    --bs-btn-color: var(--color-principal);
+    --bs-btn-border-color: var(--color-principal);
+    --bs-btn-hover-color: var(--color-fondo-principal);
+    --bs-btn-hover-bg: var(--color-principal);
+    --bs-btn-hover-border-color: var(--color-principal);
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: var(--color-fondo-principal);
+    --bs-btn-active-bg: var(--color-principal);
+    --bs-btn-active-border-color: var(--color-principal);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--color-principal);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--color-principal);
+    --bs-gradient: none;
+ }
+ .btn-link {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: var(--color-principal);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: var(--color-principal);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-color: var(--color-principal);
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-border-color: transparent;
+    --bs-btn-box-shadow: none;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    text-decoration: underline;
+ }
+ .mat-calendar-body-disabled>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    color: #555;
+ }
+ .mat-calendar-header{
+    background: var(--color-fondo-secundario);
+    color: var(--color-principal);
+ }
+ .mat-calendar-content{
+    background: var(--color-fondo-secundario);
+ }
+ .mat-datepicker-toggle, .mat-datepicker-content .mat-calendar-next-button, .mat-datepicker-content .mat-calendar-previous-button {
+    color: var(--color-principal);
+ }
+ .mat-calendar-table-header{
+    color: var(--color-principal);
+ }
+ .mat-datepicker-content .mat-calendar {
+    background: var(--color-fondo-secundario);
+ }
+ .mdc-list-item__primary-text:hover{
+   color: var(--color-principal) !important;
+ } .mdc-list-item__primary-text {
+   color: #fff !important;
+}
+
+.container_home{
+   display: flex;
+   align-items: center;
+   align-content: center;
+}
+.integrantes{
+   display: flex;
+   flex-direction: column;
+   margin: 0 30%;
+   background-color: #fff;
+   padding: 25px;
+   border-radius: 5px;
+   box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+   text-align: center;
+   gap: 15px;
+}
+.integrantes h2{
+   font-size: 50px;
+}
+.integrantes h3{
+   font-size: 25px;
+}
+.background_img{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(src\assets\imagenes\fondo.jpg);
+   background-size: 100vw 100vh;
+   background-repeat: no-repeat;
+}
+.titulo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   margin-top: 25px;
+}
+.titulo h1{
+   font-size: 30px;
+   background-color: #fff;
+   padding: 25px;
+   border-radius: 5px;
+   box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+}
+.titulo div{
+   font-size: 75px;
+   background-color: #fff;
+   padding: 75px;
+   border-radius: 5px;
+   box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+   margin-bottom: 50px;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 25px;
+   gap: 25px;
+}
+.container_op1 , .container_op2{
+   width: 80%;
+   min-height: 400px;
+   padding: 20px;
+   font-size: 20px;
+   line-height: 1.5;
+   box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+   border-radius: 5px;
+   text-align: justify;
+   background: #fff;
+}
+.container_op1 img{
+   width: 500px;
+   border-radius: 5px;
+   float: left;
+   margin-right: 15px;
+}
+.container_op2 img{
+   width: 500px;
+   border-radius: 5px;
+   float: right;
+   margin-left: 15px;
+}
