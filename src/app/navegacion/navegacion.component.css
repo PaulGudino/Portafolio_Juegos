@@ -25,10 +25,11 @@ h1.example-app-name {
   flex: 1;
 }
 
-.mat-sidenav{
+.mat-sidenav {
   width: 15%;
 }
-.icono{
+
+.icono {
   margin-right: 10px;
 }
 
@@ -36,13 +37,13 @@ h1.example-app-name {
   flex: 1 1 auto;
 }
 
-a:hover{
-  color: var(--color-principal)
-}
-mat-sidenav{
-  padding-bottom: 70px;
+a:hover {
+  color: var(--color-principal);
 }
 
+mat-sidenav {
+  padding-bottom: 70px;
+}
 
 .nav-container {
   background: var(--color-fondo-principal);
@@ -64,4 +65,37 @@ li {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  .example-sidenav-container {
+    flex-direction: row;
+  }
+
+  .mat-sidenav {
+    width: auto;
+  }
+
+  .example-container {
+    position: relative;
+  }
+
+  .example-is-mobile .example-toolbar {
+    position: static;
+    z-index: auto;
+  }
+
+  h1.example-app-name {
+    margin: 15px 0 0 8px;
+  }
+
+  .example-spacer {
+    display: none;
+  }
+
+  .nav-container {
+    max-width: none;
+  }
 }

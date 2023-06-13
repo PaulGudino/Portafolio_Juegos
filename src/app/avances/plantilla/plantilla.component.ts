@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./plantilla.component.css']
 })
 export class PlantillaComponent {
-  @Input() Opcion_clase : string =""
-  @Input() Imagen : string =""
-  @Input() Contenido : string =""
+  @Input() Opcion_clase: string = ""
+  @Input() Imagen: string = ""
+  @Input() Contenido: any = ""
 }
