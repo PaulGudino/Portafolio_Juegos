@@ -12,18 +12,28 @@ export class NavegacionComponent {
       "nombre": "Inicio",
       "icono": "home",
       "ruta": "/inicio"
-   },
-    {
-       "nombre": "Avance1",
-       "icono": "note",
-       "ruta": "/avance1"
     },
     {
-      "nombre": "Avance2",
-      "icono": "note",
+      "nombre": "Primeras Ideas",
+      "icono": "sports_esports",
+      "ruta": "/avance1"
+    },
+    {
+      "nombre": "Ideas Seleccionadas",
+      "icono": "sports_esports",
       "ruta": "/avance2"
-   }
-    
- ]
+    },
+    {
+      "nombre": "Juego Seleccionado",
+      "icono": "sports_esports",
+      "ruta": "/avance3"
+    },
+    {
+      "nombre": "Descripción del juego",
+      "icono": "sports_esports",
+      "ruta": "/avance4"
+    }
+
+  ]
 
 }

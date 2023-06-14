@@ -146,6 +146,7 @@ body ::-webkit-scrollbar {
    padding: 25px;
    border-radius: 5px;
    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+   font-weight: bold;
 }
 
 .container {
@@ -169,7 +170,7 @@ body ::-webkit-scrollbar {
 .container_op1,
 .container_op2 {
    width: 80%;
-   min-height: 300px;
+   min-height: 100px;
    padding: 20px;
    margin-bottom: 20px;
    font-size: 20px;
