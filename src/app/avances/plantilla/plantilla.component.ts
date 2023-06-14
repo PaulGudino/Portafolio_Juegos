@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class PlantillaComponent {
   @Input() Opcion_clase: string = ""
   @Input() Imagen: string = ""
+  @Input() Subtitulo: string = ""
   @Input() Contenido: any = ""
 }
