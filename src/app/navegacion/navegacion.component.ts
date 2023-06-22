@@ -24,14 +24,19 @@ export class NavegacionComponent {
       "ruta": "/avance2"
     },
     {
-      "nombre": "Juego Seleccionado",
+      "nombre": "Juego Versión 1",
       "icono": "sports_esports",
       "ruta": "/avance3"
     },
     {
-      "nombre": "Descripción del juego",
+      "nombre": "Juego Versión 1.1",
       "icono": "sports_esports",
       "ruta": "/avance4"
+    },
+    {
+      "nombre": "Juego Versión 2",
+      "icono": "sports_esports",
+      "ruta": "/avance5"
     }
 
   ]

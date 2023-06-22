@@ -19,6 +19,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { Avance3Component } from './avances/avance3/avance3.component';
 import { ParrafosComponent } from './avances/parrafos/parrafos.component';
 import { Avance4Component } from './avances/avance4/avance4.component';
+import { Avance5Component } from './avances/avance5/avance5.component';
+import { Avance6Component } from './avances/avance6/avance6.component';
+import { Avance7Component } from './avances/avance7/avance7.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { Avance4Component } from './avances/avance4/avance4.component';
     IntroduccionComponent,
     Avance3Component,
     ParrafosComponent,
-    Avance4Component
+    Avance4Component,
+    Avance5Component,
+    Avance6Component,
+    Avance7Component
   ],
   imports: [
     BrowserModule,
