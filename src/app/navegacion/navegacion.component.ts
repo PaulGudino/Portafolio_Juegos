@@ -24,19 +24,29 @@ export class NavegacionComponent {
       "ruta": "/avance2"
     },
     {
-      "nombre": "Juego Versión 1",
+      "nombre": "Perro vs Ladron",
       "icono": "sports_esports",
       "ruta": "/avance3"
     },
     {
-      "nombre": "Juego Versión 1.1",
+      "nombre": "PvsL Prototipado",
       "icono": "sports_esports",
       "ruta": "/avance4"
     },
     {
-      "nombre": "Juego Versión 2",
+      "nombre": "Wrestlements",
       "icono": "sports_esports",
       "ruta": "/avance5"
+    },
+    {
+      "nombre": "Wts Reglas",
+      "icono": "sports_esports",
+      "ruta": "/avance6"
+    },
+    {
+      "nombre": "Wts Testing",
+      "icono": "sports_esports",
+      "ruta": "/avance7"
     }
 
   ]

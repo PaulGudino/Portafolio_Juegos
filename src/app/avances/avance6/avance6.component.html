@@ -1,1 +1,69 @@
-<p>avance6 works!</p>
+<app-navegacion>
+    <div class="resolucion">
+        <div class="titulo">
+            <h1>Cambio de Reglas</h1>
+        </div>
+        <div class="container">
+            <div class="container_op1">
+                <img src="./assets/imagenes/avance5/Avc5Comojugar.jpeg">
+                <p>
+                    <b>¿Cómo se juega?</b><br>
+                    El juego contiene 20 dados, pueden jugar 2 – 3 personas, cada persona debe tener 6 dados y hay un
+                    dado
+                    extra que será para iniciar el juego y otro dado de repuesto.
+                    El dado del inicio se lo debe tirar hasta que salga un elemento.
+                    Para decidir el orden habrá 3 cartas enumeradas del 1 al 3 y cada jugador tomará una al azar. Una
+                    vez
+                    que ya este definido el orden ya se podrá jugar
+                    El jugador debe tirar un dado al ring, también puede colisionar con otros dados para cambiar el
+                    color
+                    visto desde arriba.
+                </p>
+                <p>
+                    Si el dado que el jugador tiró coincide con el mismo color de un elemento visto desde arriba con
+                    otros dados, deba seguir las instrucciones de lo que representa ese elemento. <br>  
+
+                    <br><b>Fuego (Rojo)</b>: El jugador debe recolectar los dados que tienen el color del elemento fuego
+                    cuando se ven desde arriba.
+
+                    <br><b>Agua (Azul)</b>: El jugador no debe recolectar los dados que tienen el color del elemento
+                    agua
+                    cuando se ven
+                    desde arriba, y termina su turno.
+
+                    <br><b>Tierra (Verde)</b>: El jugador debe recolectar los dados que tienen el color del elemento
+                    tierra
+                    cuando se ven
+                    desde arriba como un solo bloque por el jugador y se termina su turno, es decir que, si en algún
+                    momento le toca volver a tirar, tendrá que lanzar todo ese bloque de dados.
+
+                    <br><b>Aire (Blanco)</b>: El jugador debe recolectar los dados que tienen el color del elemento aire
+                    cuando
+                    se ven desde
+                    arriba, además debe sacudir el ring por 2s y termina su turno.
+
+                    <br><b>Trueno (Amarilo)</b>: El jugador debe recolectar los dados que tienen el color del elemento
+                    trueno
+                    cuando se ven
+                    desde arriba solo si tiene bloques de dados <b>(Verde)</b>, además de que en caso de tener un solo bloque de dados este anula el efecto del
+                    elemento tierra, pero si tiene más de un bloque de dados este anula el efecto del bloque mayor y
+                    termina su turno.
+
+                    Si el dado que el jugador tiró coincide con el color del comodín, debera seguir las instrucciones
+                    del comodín
+
+                    <br><b>Comodín (Naranja)</b>: El jugador debe tomar un comodin cuando los dados tienen el color del comodín
+                    cuando
+                    se ven desde
+                    arriba, y luego sacuede el ring.
+                </p>
+                <p>
+                    Si un dado cae fuera del ring, este dado ya no formara parte de la partida.
+                </p>
+                <p>
+                    Si el ring llega a quedar vacío todos los jugadores a excepción de quien dejo el ring vacio tiran un dado al ring.
+                </p>
+            </div>
+        </div>
+    </div>
+</app-navegacion>
