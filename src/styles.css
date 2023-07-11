@@ -1,7 +1,7 @@
 :root {
-   --color-principal: #00ffc5;
-   --color-fondo-principal: #000910;
-   --color-fondo-secundario: #002130;
+   --color-principal: #5bb7b6;
+   --color-fondo-principal: #010002;
+   --color-fondo-secundario: #010002b4;
    --color-letras: #ffffff;
    --color-ventanas: #055970;
    --color-cafe: #3f3f43;
@@ -52,6 +52,9 @@ body ::-webkit-scrollbar {
 
 .background-navy-primary {
    background-color: var(--color-fondo-secundario);
+}
+.background-navy-primary .submenu-item{
+   padding: 15px;
 }
 
 .navy-primary {
@@ -126,7 +129,7 @@ body ::-webkit-scrollbar {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-image: url(src\assets\imagenes\fondo.jpg);
+   background-image: url(src\assets\imagenes\fondo2.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -183,13 +186,20 @@ body ::-webkit-scrollbar {
 
 .container_op1 img,
 .container_op2 img {
-   width: 100%;
-   height: 50vh;
+   width: 30%;
+   display: flex;
+   justify-content: center;
    border-radius: 5px;
    margin-bottom: 15px;
    object-fit: fill;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   cursor: pointer;
 }
-
+.expandida {
+   width: 100%;
+}
 .resolucion {
    height: 100vh;
    width: 100vw;
@@ -201,5 +211,10 @@ body ::-webkit-scrollbar {
    .container_op2 {
       width: 90%;
    }
+   
+.container_op1 img,
+.container_op2 img {
+   width: 70%;
+}
 
 }
