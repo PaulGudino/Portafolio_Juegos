@@ -204,6 +204,9 @@ body ::-webkit-scrollbar {
    height: 100vh;
    width: 100vw;
 }
+ul{
+   padding-left: 5%;
+}
 
 @media only screen and (max-width: 768px) {
 

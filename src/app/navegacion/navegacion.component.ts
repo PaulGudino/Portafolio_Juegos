@@ -52,6 +52,11 @@ export class NavegacionComponent {
         "icono": "sports_esports",
         "ruta": "/avance7"
       },
+      {
+        "nombre": "Wts Final",
+        "icono": "sports_esports",
+        "ruta": "/avance8"
+      },
   ],
       mostrarSubsecciones: false
     },
