@@ -28,34 +28,48 @@ export class NavegacionComponent {
         "ruta": "/avance2"
       },
       {
-        "nombre": "Perro vs Ladron",
+        "nombre": "Perro vs Ladrón",
         "icono": "sports_esports",
-        "ruta": "/avance3"
-      },
-      {
-        "nombre": "PvsL Prototipado",
-        "icono": "sports_esports",
-        "ruta": "/avance4"
+        "subsecciones":[
+          {
+            "nombre": "Versión 0.1",
+            "icono": "sports_esports",
+            "ruta": "/avance4"
+          },
+          {
+            "nombre": "Prototipado",
+            "icono": "sports_esports",
+            "ruta": "/avance3"
+          }
+        ],
+        mostrarSubSubsecciones: false
       },
       {
         "nombre": "Wrestlements",
         "icono": "sports_esports",
-        "ruta": "/avance5"
-      },
-      {
-        "nombre": "Wts Reglas",
-        "icono": "sports_esports",
-        "ruta": "/avance6"
-      },
-      {
-        "nombre": "Wts Testing",
-        "icono": "sports_esports",
-        "ruta": "/avance7"
-      },
-      {
-        "nombre": "Wts Final",
-        "icono": "sports_esports",
-        "ruta": "/avance8"
+        "subsecciones": [
+          {
+            "nombre": "Versión 0.1",
+            "icono": "sports_esports",
+            "ruta": "/avance5"
+          },
+          {
+            "nombre": "Versión v0.2",
+            "icono": "sports_esports",
+            "ruta": "/avance6"
+          },
+          {
+            "nombre": "Testing",
+            "icono": "sports_esports",
+            "ruta": "/avance7"
+          },
+          {
+            "nombre": "Versión Final",
+            "icono": "sports_esports",
+            "ruta": "/avance8"
+          },
+        ],
+        mostrarSubSubsecciones: false
       },
   ],
       mostrarSubsecciones: false
@@ -65,8 +79,12 @@ export class NavegacionComponent {
       "icono": "home",
     }
   ];
+
+  toggleSubSubsecciones(item: any): void {
+    item.mostrarSubSubsecciones = !item.mostrarSubSubsecciones;
+    console.log(item.mostrarSubSubsecciones)
+  }
   toggleSubsecciones(item: any): void {
     item.mostrarSubsecciones = !item.mostrarSubsecciones;
-    console.log(item.mostrarSubsecciones);
   }
 }

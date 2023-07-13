@@ -22,10 +22,25 @@
                   {{ item.nombre }}
                </a>
                <mat-nav-list *ngIf="item.mostrarSubsecciones" class = "submenu-item">
-                  <a *ngFor="let subseccion of item.subsecciones" mat-list-item [routerLink]="subseccion.ruta">
-                     <mat-icon class="icono">{{ subseccion.icono }}</mat-icon>
-                     {{ subseccion.nombre }}
-                  </a>
+                  <ng-container *ngFor="let subseccion of item.subsecciones">
+                     <a *ngIf="!subseccion.subsecciones" mat-list-item [routerLink]="subseccion.ruta">
+                        <mat-icon class="icono">{{ subseccion.icono }}</mat-icon>
+                        {{ subseccion.nombre }}
+                     </a>
+                     <a *ngIf="subseccion.subsecciones" mat-list-item (click)="toggleSubSubsecciones(subseccion)">
+                        <mat-icon class="icono">{{ subseccion.icono }}</mat-icon>
+                        {{ subseccion.nombre }}
+                     </a>
+                     <mat-nav-list *ngIf="subseccion.mostrarSubSubsecciones" class = "submenu-item">
+                        <ng-container *ngFor="let subsubseccion of subseccion.subsecciones">
+                           <a mat-list-item [routerLink]="subsubseccion.ruta">
+                              <mat-icon class="icono">{{ subsubseccion.icono }}</mat-icon>
+                              {{ subsubseccion.nombre }}
+                           </a>
+                        </ng-container>
+                     </mat-nav-list>
+                  </ng-container>
+                  
                </mat-nav-list>
          </ng-container>
          </mat-nav-list>
