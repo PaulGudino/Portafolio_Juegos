@@ -187,7 +187,7 @@ body ::-webkit-scrollbar {
 .container_op1 img,
 .container_op2 img {
    width: 100%;
-   height: 350px;
+   height: 400px;
    display: flex;
    justify-content: center;
    border-radius: 5px;
@@ -218,7 +218,7 @@ ul{
    
 .container_op1 img,
 .container_op2 img {
-   width: 70%;
+   height: 200px;
 }
 
 }
