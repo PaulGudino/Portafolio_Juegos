@@ -23,6 +23,8 @@ import { Avance5Component } from './avances/avance5/avance5.component';
 import { Avance6Component } from './avances/avance6/avance6.component';
 import { Avance7Component } from './avances/avance7/avance7.component';
 import { Avance8Component } from './avances/avance8/avance8.component';
+import { Avance9Component } from './avances/avance9/avance9.component';
+import { Avance10Component } from './avances/avance10/avance10.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { Avance8Component } from './avances/avance8/avance8.component';
     Avance5Component,
     Avance6Component,
     Avance7Component,
-    Avance8Component
+    Avance8Component,
+    Avance9Component,
+    Avance10Component
   ],
   imports: [
     BrowserModule,
