@@ -17,20 +17,37 @@
                 <p>
                     Paul : Líder Playtesting - Ayudante arte y programador
                 </p>
-                <img src="./assets/imagenes/avance10/Avc10_Img1.jpeg">
+                <h2>Diagrama de Gantt</h2>
+                <b>Iteración 1</b>
+                <p>En esta iteración nos centraremos en la ideación para los escenarios del juego, el estilo de los personajes.
+                    El diseño será mediante herramientas para la elaboración de pixel art.
+                     La ideación será en clase y en reuniones virtuales. La implementación será en Unity.</p>
+                <img src="./assets/imagenes/avance10/Avc10_Img1.png" (click)="openPopup($event)">
+                <b>Iteración 2</b>
+                <p>En esta iteración discutiremos acerca de las mecánicas del juego, principalmente el del combate, y las iteracciones con ciertos objetos del juego. El diseño será mediante herramientas para la elaboración de pixel art.
+                    La ideación será en clase y en reuniones virtuales. La implementación será en Unity.</p>
+                <img src="./assets/imagenes/avance10/Avc10_Img1_2.png" (click)="openPopup($event)">
+                <b>Iteración 3</b>
+                <p>Trabajaremos en las escenas para demostrar la historia del contexto del juego. El diseño será mediante herramientas para la elaboración de pixel art.
+                    La ideación será en clase y en reuniones virtuales. La implementación será en Unity.</p>
+                <img src="./assets/imagenes/avance10/Avc10_Img1_3.png" (click)="openPopup($event)">
                 <p>
                     <b>Avances</b>
                 </p>
                 <p>
                     Arte
                 </p>
-                <img src="./assets/imagenes/avance10/Avc10_Img2.jpeg">
-                <img src="./assets/imagenes/avance10/Avc10_Img3.jpeg">
+                <img src="./assets/imagenes/avance10/Avc10_Img2.jpeg" (click)="openPopup($event)"   >
+                <img src="./assets/imagenes/avance10/Avc10_Img3.jpeg" (click)="openPopup($event)"   >
                 <p>
                     Unity
                 </p>
-                <img src="./assets/imagenes/avance10/Juego.gif">
+                <img src="./assets/imagenes/avance10/Juego.gif" (click)="openPopup($event)" >
             </div>
+        </div>
+        <div class="popup-image" [style.display]="isPopupVisible ? 'block' : 'none'">
+            <span (click)="closePopup()">&times;</span>
+            <img [src]="popupImageSrc">
         </div>
     </div>
 </app-navegacion>

@@ -11,6 +11,9 @@ import { Avance7Component } from './avances/avance7/avance7.component';
 import { Avance8Component } from './avances/avance8/avance8.component';
 import { Avance9Component } from './avances/avance9/avance9.component';
 import { Avance10Component } from './avances/avance10/avance10.component';
+import { Iteracion1Component } from './avances/iteracion1/iteracion1.component';
+import { Iteracion2Component } from './avances/iteracion2/iteracion2.component';
+import { Iteracion3Component } from './avances/iteracion3/iteracion3.component';
 
 const routes: Routes = [
   { path: 'inicio', component: IntroduccionComponent },
@@ -25,6 +28,9 @@ const routes: Routes = [
   //Segundo Parcial
   { path: 'avance9', component: Avance9Component },
   { path: 'avance10', component: Avance10Component },
+  { path: 'iteracion1', component: Iteracion1Component},
+  { path: 'iteracion2', component: Iteracion2Component },
+  { path: 'iteracion3', component: Iteracion3Component },
   { path: '**', redirectTo: 'inicio' }
 ];
 

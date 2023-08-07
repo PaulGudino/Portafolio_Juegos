@@ -12,9 +12,9 @@
                 <p>
                     Se tiene pensado hacer un RPG 2D , en el cual el perro tendra que pelear con diferentes ladrones
                 </p>
-                <img src="./assets/imagenes/avance9/Av9_Img1.jpeg">
-                <img src="./assets/imagenes/avance9/Av9_Img2.jpeg">
-                <img src="./assets/imagenes/avance9/Av9_Img3.jpeg">
+                <img src="./assets/imagenes/avance9/Av9_Img1.jpeg" (click)="openPopup($event)">
+                <img src="./assets/imagenes/avance9/Av9_Img2.jpeg" (click)="openPopup($event)">
+                <img src="./assets/imagenes/avance9/Av9_Img3.jpeg" (click)="openPopup($event)">
                 <p>
                     Al inicio se tenia pensado que el perro use armas para atacar, pero por recomendacion de
                     diferentes compañeros de clases, nos dijeron que es mejor que tenga habilidades de perro.
@@ -26,13 +26,17 @@
                     . Correr <br>
                     . Llamar a la manada <br>
                 </p>
-                <img src="./assets/imagenes/avance9/Av9_Img4.jpeg">
+                <img src="./assets/imagenes/avance9/Av9_Img4.jpeg" (click)="openPopup($event)">
                 <p>
                     <b>Ideas del mapa</b>
                 </p>
-                <img src="./assets/imagenes/avance9/Av9_Img5.jpeg">
-                <img src="./assets/imagenes/avance9/Av9_Img6.jpeg">
+                <img src="./assets/imagenes/avance9/Av9_Img5.jpeg" (click)="openPopup($event)">
+                <img src="./assets/imagenes/avance9/Av9_Img6.jpeg" (click)="openPopup($event)">
             </div>
+        </div>
+        <div class="popup-image" [style.display]="isPopupVisible ? 'block' : 'none'">
+            <span (click)="closePopup()">&times;</span>
+            <img [src]="popupImageSrc">
         </div>
     </div>
 </app-navegacion>

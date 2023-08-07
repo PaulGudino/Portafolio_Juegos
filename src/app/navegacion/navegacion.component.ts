@@ -88,6 +88,21 @@ export class NavegacionComponent {
           "icono": "sports_esports",
           "ruta": "/avance10"
         },
+        {
+          "nombre": "Iteración 1",
+          "icono": "sports_esports",
+          "ruta": "/iteracion1"
+        },
+        {
+          "nombre": "Iteración 2",
+          "icono": "sports_esports",
+          "ruta": "/iteracion2"
+        },
+        {
+          "nombre": "Iteración 3",
+          "icono": "sports_esports",
+          "ruta": "/iteracion3"
+        },
       ],
       mostrarSubsecciones: false
     },
