@@ -1,0 +1,51 @@
+<app-navegacion>
+    <div class="resolucion">
+        <div class="titulo">
+            <h1>Iteración 1</h1>
+        </div>
+        <div class="container">
+            <div class="container_op1">
+                <b>Ideación</b>
+                <p>
+                    Se descartó la idea de hacer el juego <b>Wrestlements</b> debido a que perderia su gracia, ya que el juego es más físico.
+                    Se decidió retomar la idea <b> Perro VS Ladrón</b> ya que se adapta menjor a la virtualización
+                </p>
+                <p>
+                    Se tiene pensado hacer un RPG 2D , en el cual el perro tendra que pelear con diferentes ladrones
+                </p>
+                <img src="./assets/imagenes/avance9/Av9_Img1.jpeg" (click)="openPopup($event)">
+                <img src="./assets/imagenes/avance9/Av9_Img2.jpeg" (click)="openPopup($event)">
+                <img src="./assets/imagenes/avance9/Av9_Img3.jpeg" (click)="openPopup($event)">
+                <p>
+                    Al inicio se tenia pensado que el perro use armas para atacar, pero por recomendacion de
+                    diferentes compañeros de clases, nos dijeron que es mejor que tenga habilidades de perro.
+                </p>
+                <p><b>Ejemplo de habilidades</b></p>
+                <p>
+                    . Moreder <br>
+                    . Ladrar <br>
+                    . Correr <br>
+                    . Llamar a la manada <br>
+                </p>
+                <img src="./assets/imagenes/avance9/Av9_Img4.jpeg" (click)="openPopup($event)">
+                <p>
+                    <b>Ideas del mapa</b>
+                </p>
+                <img src="./assets/imagenes/avance9/Av9_Img5.jpeg" (click)="openPopup($event)">
+                <img src="./assets/imagenes/avance9/Av9_Img6.jpeg" (click)="openPopup($event)">
+                <p><b>Diseño</b></p>
+                <img src="./assets/imagenes/avance10/Avc10_Img2.jpeg" (click)="openPopup($event)"   >
+                <img src="./assets/imagenes/avance10/Avc10_Img3.jpeg" (click)="openPopup($event)"   >
+                <p>
+                    <b>Implementación</b>
+                </p>
+                <img src="./assets/imagenes/avance10/Juego.gif" (click)="openPopup($event)" >
+                <p><b>Playtesting</b></p>
+            </div>
+        </div>
+        <div class="popup-image" [style.display]="isPopupVisible ? 'block' : 'none'">
+            <span (click)="closePopup()">&times;</span>
+            <img [src]="popupImageSrc">
+        </div>
+    </div>
+</app-navegacion>

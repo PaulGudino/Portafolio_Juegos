@@ -1,0 +1,24 @@
+<app-navegacion>
+    <div class="resolucion">
+        <div class="titulo">
+            <h1>Itearción 3</h1>
+        </div>
+        <div class="container">
+            <div class="container_op1">
+                <b>Ideación</b>
+               
+                <p><b>Diseño</b></p>
+                
+                <p>
+                    <b>Implementación</b>
+                </p>
+               
+                <p><b>Playtesting</b></p>
+            </div>
+        </div>
+        <div class="popup-image" [style.display]="isPopupVisible ? 'block' : 'none'">
+            <span (click)="closePopup()">&times;</span>
+            <img [src]="popupImageSrc">
+        </div>
+    </div>
+</app-navegacion>
