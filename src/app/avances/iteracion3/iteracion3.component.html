@@ -1,24 +1,32 @@
 <app-navegacion>
-    <div class="resolucion">
-        <div class="titulo">
-            <h1>Itearción 3</h1>
-        </div>
-        <div class="container">
-            <div class="container_op1">
-                <b>Ideación</b>
-               
-                <p><b>Diseño</b></p>
-                
-                <p>
-                    <b>Implementación</b>
-                </p>
-               
-                <p><b>Playtesting</b></p>
-            </div>
-        </div>
-        <div class="popup-image" [style.display]="isPopupVisible ? 'block' : 'none'">
-            <span (click)="closePopup()">&times;</span>
-            <img [src]="popupImageSrc">
-        </div>
+  <div class="resolucion">
+    <div class="titulo">
+      <h1>Iteración 3</h1>
     </div>
+    <div class="container">
+      <div class="container_op1">
+        <h1>Ideación</h1>
+        <p>En esta iteración se planificó trabajar en la introducción del juego, mensajes para explicar como funcionan las mecánicas de juego, 
+            y se aplicaron las mejores comentadas en la iteración anterior.</p>
+        <h1>Diseño</h1>
+        <img src="./assets/imagenes/iteracion3/casa1.jpeg" (click)="openPopup($event)">
+        <img src="./assets/imagenes/iteracion3/casa2.png" (click)="openPopup($event)">
+        <img src="./assets/imagenes/iteracion3/casa3.png" (click)="openPopup($event)">
+        <h1>Implementación</h1>
+        <img src="./assets/imagenes/iteracion3/impl1.png" (click)="openPopup($event)">
+        <img src="./assets/imagenes/iteracion3/impl2.png" (click)="openPopup($event)">
+        <img src="./assets/imagenes/iteracion3/impl3.png" (click)="openPopup($event)">
+        <h1>Playtesting</h1>
+        Durante el playtesting recibimos comentarios acerca de las animaciones porque se vieron unos cuantas imperfecciones, no se referian a lo funcional sino a lo estético, también que el combate contra el jefe final a veces se hacía complicado apuntar al enemigo.
+        <img src="./assets/imagenes/iteracion3/playtesting2.jpeg" (click)="openPopup($event)">
+      </div>
+    </div>
+    <div
+      class="popup-image"
+      [style.display]="isPopupVisible ? 'block' : 'none'"
+    >
+      <span (click)="closePopup()">&times;</span>
+      <img [src]="popupImageSrc" />
+    </div>
+  </div>
 </app-navegacion>

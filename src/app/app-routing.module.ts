@@ -14,7 +14,7 @@ import { Avance10Component } from './avances/avance10/avance10.component';
 import { Iteracion1Component } from './avances/iteracion1/iteracion1.component';
 import { Iteracion2Component } from './avances/iteracion2/iteracion2.component';
 import { Iteracion3Component } from './avances/iteracion3/iteracion3.component';
-
+import { TeaserComponent } from './avances/teaser/teaser.component';
 const routes: Routes = [
   { path: 'inicio', component: IntroduccionComponent },
   { path: 'avance1', component: Avance1Component },
@@ -31,6 +31,7 @@ const routes: Routes = [
   { path: 'iteracion1', component: Iteracion1Component},
   { path: 'iteracion2', component: Iteracion2Component },
   { path: 'iteracion3', component: Iteracion3Component },
+  { path: 'teaser', component: TeaserComponent },
   { path: '**', redirectTo: 'inicio' }
 ];
 

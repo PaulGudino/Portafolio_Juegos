@@ -103,6 +103,11 @@ export class NavegacionComponent {
           "icono": "sports_esports",
           "ruta": "/iteracion3"
         },
+        {
+          "nombre": "Teaser",
+          "icono": "sports_esports",
+          "ruta": "/teaser"
+        },
       ],
       mostrarSubsecciones: false
     },

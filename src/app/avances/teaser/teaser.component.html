@@ -1,0 +1,20 @@
+<app-navegacion>
+    <div class="resolucion">
+      <div class="titulo">
+        <h1>Teaser de Venganza Canina</h1>
+      </div>
+      <div class="container">
+        <div class="container_op1">
+          <video src="./assets/imagenes/iteracion3/teaser.mp4" width="640" height="480" controls></video>
+        </div>
+      </div>
+      <div
+        class="popup-image"
+        [style.display]="isPopupVisible ? 'block' : 'none'"
+      >
+        <span (click)="closePopup()">&times;</span>
+        <img [src]="popupImageSrc" />
+      </div>
+    </div>
+  </app-navegacion>
+  
